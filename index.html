@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="funciones.js"></script>
+</head>
+<body class="cuerpo">
+    <div class="logo">
+        <img src="Recursos/logo.png" alt="">
+    </div>
+    <div class="cajaFuncion">
+        <textarea class="areaTextoIngreso" placeholder="Ingrese el texto aqui" name="" id="textoEntrada" cols="30" rows="25"></textarea>
+        <div class="alertaE">
+            <img src="Recursos/noti.png" alt=""> Solo letras minúsculas y sin acentos
+        </div>
+        <div class="areaBotenes">
+            <button class="botonE" onclick="encriptar()">Encriptar</button>
+            <button class="botonD" onclick="desencriptar()">Desencriptar</button>
+        </div>        
+    </div>
+    <div class="cajaResultado">
+        <textarea class="areaTexto" name="" id="textoSalida" cols="10" rows="30" readonly placeholder="Ningún mensaje fue encontrado"></textarea>
+        <button onclick="updateClipboard()" id="copiador">Copiar</button>
+    </div>
+</body>
+</html>
+
