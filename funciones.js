@@ -1,5 +1,9 @@
 function encriptar(){
     texto= document.getElementById("textoEntrada").value
+    document.getElementById("copiador").style.visibility = 'visible';
+    document.getElementById('texto1').style.visibility = 'hidden';
+    //document.getElementById('texto2').style.visibility = 'hidden';
+    document.getElementById('fotoL').style.visibility = 'hidden';
     let salida=""
     for (let i = 0; i < texto.length; i++) {
         switch(texto.charAt(i)){
@@ -24,7 +28,7 @@ function encriptar(){
         }
     }
     console.log(salida)
-    document.getElementById("textoSalida").value=salida
+    document.getElementById("texto2").value=salida
     
 }
 

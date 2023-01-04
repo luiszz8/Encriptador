@@ -24,8 +24,15 @@
         </div>        
     </div>
     <div class="cajaResultado">
-        <textarea class="areaTexto" name="" id="textoSalida" cols="10" rows="30" readonly placeholder="Ningún mensaje fue encontrado"></textarea>
-        <button onclick="updateClipboard()" id="copiador">Copiar</button>
+        <img class="vacio" src="Recursos/vacio.png" alt="" id="fotoL">
+        <div class="texto1" id="texto1">
+            Ningún mensaje fue encontrado
+        </div>
+        <div class="texto2" id="texto2">
+            Ingresa el texto que desees encriptar o desencriptar.
+        </div>
+        <textarea class="areaTexto" placeholder="Ingrese el texto aqui" name="" id="textoSalida" cols="30" rows="25"></textarea>
+        <button class="botonC" onclick="updateClipboard()" id="copiador">Copiar</button>
     </div>
 </body>
 </html>
